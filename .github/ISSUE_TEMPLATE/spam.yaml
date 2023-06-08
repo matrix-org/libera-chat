@@ -1,7 +1,7 @@
 name: "There is spam in a room I manage"
 description: "I’m an IRC op and there is spam coming from Matrix to my IRC channel."
 title: "There is spam in a room I manage"
-labels: ["spam"]
+labels: ["I-Spam"]
 
 body:
   - type: markdown

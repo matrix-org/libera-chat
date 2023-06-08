@@ -1,7 +1,7 @@
 name: "I'm kicked out of rooms regularly"
 description: "As a Matrix user, I’m regularly kicked out of IRC rooms on Libera Chat."
 title: "I'm kicked out of rooms regularly"
-labels: ["support"]
+labels: ["support", "I-Kicked"]
 
 body:
   - type: markdown
