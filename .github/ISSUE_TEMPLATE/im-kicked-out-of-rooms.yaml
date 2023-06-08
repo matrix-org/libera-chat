@@ -1,0 +1,35 @@
+name: "I'm kicked out of rooms regularly"
+about: "As a Matrix user, I’m regularly kicked out of IRC rooms on Libera Chat."
+title: "I'm kicked out of rooms regularly"
+labels: ["support"]
+assignees:
+
+body:
+  - type: markdown
+    attribues:
+      value: | 
+        <!--
+          Every user that is not active in any Libera Chat channel for 30 days is automatically kicked by the idle kicker. 
+
+          You can list the rooms you are currently into that are bridged to Libera Chat by opening a DM with `@appservice:libera.chat` and sending `!listrooms`.
+          If you were not active in any of these rooms, this is why the idle-kicker removed you.
+
+          You an also regularly (more often than every 30 days) send `!active` to `@appservice:libera.chat` in DM to manifest yourself as an active user and avoid being kicked by the idle kicker.
+        -->
+    
+  - type: input
+    id: matrixid
+    attributes:
+      label: Your Matrix ID
+      description: Your Matrix ID helps us finding issues related to you in the logs
+      placeholder: "@username:example.com"
+    validation:
+      required: true
+  - type: checkboxes
+    id: statuscheck
+    attributes:
+      label: 30 days activity
+      description: Were you active in any of the rooms bridged to libera chat in the last 30 days?
+      options:
+        - label: I was active in the rooms in the last 30 days
+          required: true

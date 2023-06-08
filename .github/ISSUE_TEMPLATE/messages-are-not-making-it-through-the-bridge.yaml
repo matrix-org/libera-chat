@@ -2,7 +2,6 @@ name: "Messages are not making it through the bridge"
 about: "As a Matrix or IRC user, my messages don't seem to make it through"
 title: "Messages are not making it through the bridge"
 labels: ["support"]
-assignees: 
 
 body:
     - type: dropdown
@@ -35,7 +34,7 @@ body:
       attributes:
         label: Your Matrix ID, if you're a Matrix user
         description: Your Matrix ID helps us finding issues related to you in the logs
-        placeholder: @username:example.com
+        placeholder: "@username:example.com"
       validation:
         required: false
     - type input
