@@ -1,4 +1,1 @@
-# .github
-Default metadata files for repos in this org.
-
-If you're seeing this readme in your project, your project is configured wrong.
+This repository is for support requests on the Matrix <-> Libera Chat bridge operated by the matrix.org Foundation.
