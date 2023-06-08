@@ -1,12 +1,11 @@
 name: "I'm kicked out of rooms regularly"
-about: "As a Matrix user, I’m regularly kicked out of IRC rooms on Libera Chat."
+description: "As a Matrix user, I’m regularly kicked out of IRC rooms on Libera Chat."
 title: "I'm kicked out of rooms regularly"
 labels: ["support"]
-assignees:
 
 body:
   - type: markdown
-    attribues:
+    attributes:
       value: | 
         <!--
           Every user that is not active in any Libera Chat channel for 30 days is automatically kicked by the idle kicker. 
@@ -22,7 +21,7 @@ body:
       label: Your Matrix ID
       description: Your Matrix ID helps us finding issues related to you in the logs
       placeholder: "@username:example.com"
-    validation:
+    validations:
       required: true
   - type: checkboxes
     id: statuscheck
