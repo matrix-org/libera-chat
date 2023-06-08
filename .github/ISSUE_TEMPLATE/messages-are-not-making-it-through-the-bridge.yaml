@@ -1,5 +1,5 @@
 name: "Messages are not making it through the bridge"
-about: "As a Matrix or IRC user, my messages don't seem to make it through"
+description: "As a Matrix or IRC user, my messages don't seem to make it through"
 title: "Messages are not making it through the bridge"
 labels: ["support"]
 
