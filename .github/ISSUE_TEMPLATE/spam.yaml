@@ -7,6 +7,11 @@ body:
   - type: markdown
     attributes:
       value: | 
-        <!--
-          Please report spam to abuse@matrix.org and don't open issues on this repository
-        -->
+          Please report spam to abuse@matrix.org and don't open issues on this repository.
+  - type: checkboxes
+    id: reporting
+    attributes:
+      label: Reporting Spam
+      description: Spam reports must go through abuse@matrix.org
+      options:
+        - label: I'm going to report spam to abuse@matrix.org
