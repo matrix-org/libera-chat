@@ -26,7 +26,7 @@ body:
     attributes:
       label: Federation Check
       description: Please check on https://federationtester.matrix.org that your server federates correctly and paste your server domain here
-      placeholeder: example.com
+      placeholder: example.com
     validations:
       required: true
   - type: input
@@ -35,14 +35,14 @@ body:
       label: Your Matrix ID, if you're a Matrix user
       description: Your Matrix ID helps us finding issues related to you in the logs
       placeholder: "@username:example.com"
-    validation:
+    validations:
       required: false
   - type: input
     id: room
     attributes:
       label: Room/channel affected
       description: What is the room affected by the issue?
-      placeholeder: #myroom:example.com or #myroom
+      placeholder: #myroom:example.com or #myroom
     validations:
       required: true
   - type: input
@@ -51,7 +51,7 @@ body:
       label: Time of the issue
       description: When did the issue occur, in UTC time?
       placeholder: 15:34 UTC
-    validation:
+    validations:
       required: true
   - type: markdown
     attributes:
