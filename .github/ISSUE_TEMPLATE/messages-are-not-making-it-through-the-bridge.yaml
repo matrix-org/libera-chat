@@ -21,7 +21,7 @@ body:
       options:
         - label: I checked https://status.matrix.org
           required: true
-  - type input
+  - type: input
     id: federationcheck
     attributes:
       label: Federation Check
