@@ -1,0 +1,12 @@
+name: "There is spam in a room I manage"
+about: "I’m an IRC op and there is spam coming from Matrix to my IRC channel."
+title: "There is spam in a room I manage"
+labels: ["spam"]
+
+body:
+  - type: markdown
+    attribues:
+      value: | 
+        <!--
+          Please report spam to abuse@matrix.org and don't open issues on this repository
+        -->
