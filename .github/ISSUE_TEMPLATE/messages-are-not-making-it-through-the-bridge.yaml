@@ -53,6 +53,6 @@ body:
       placeholder: 15:34 UTC
     validations:
       required: true
-  - type: markdown
+  - type: textarea
     attributes:
-      value : What happened?
+      label: Anything else?
