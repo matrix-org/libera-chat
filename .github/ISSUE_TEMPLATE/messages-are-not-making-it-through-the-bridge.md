@@ -1,16 +1,59 @@
----
-name: Messages are not making it through the bridge
-about: As a Matrix or IRC user, my messages don't seem to make it through
-title: Messages are not making it through the bridge
-labels: support
-assignees: ''
+name: "Messages are not making it through the bridge"
+about: "As a Matrix or IRC user, my messages don't seem to make it through"
+title: "Messages are not making it through the bridge"
+labels: ["support"]
+assignees: 
 
----
-
-<!-- DIAGNOSTIC
-
-Please check on https://status.matrix.org that we are not already aware of the problem.
-
-If you are a Matrix user and are running your own homeserver (your Matrix ID doesn't end with `:matrix.org`), please do a federation check at https://federationtester.matrix.org/ for your homeserver
-
--->
+body:
+    - type: dropdown
+      id: errortype
+      attributes:
+        label: Error type
+        description: What type of error do you see?
+        options:
+          - Matrix -> IRC doesn't work
+          - IRC -> Matrix doesn't work
+          - None work
+    - type: checkboxes
+      id: statuscheck
+      attributes:
+        label: Status Check
+        description: Please check on https://status.matrix.org that the team is not already aware of the issue
+        options:
+          - label: I checked https://status.matrix.org
+            required: true
+    - type input
+      id: federationcheck
+      attributes:
+        label: Federation Check
+        description: Please check on https://federationtester.matrix.org that your server federates correctly and paste your server domain here
+        placeholeder: example.com
+      validations:
+        required: true
+    - type: input
+      id: matrixid
+      attributes:
+        label: Your Matrix ID, if you're a Matrix user
+        description: Your Matrix ID helps us finding issues related to you in the logs
+        placeholder: @username:example.com
+      validation:
+        required: false
+    - type input
+      id: room
+      attributes:
+        label: Room/channel affected
+        description: What is the room affected by the issue?
+        placeholeder: #myroom:example.com or #myroom
+      validations:
+        required: true
+    - type: input
+      id: time
+      attributes:
+        label: Time of the issue
+        description: When did the issue occur, in UTC time?
+        placeholder: 15:34 UTC
+      validation:
+        required: true
+  - type: markdown
+    attributes:
+      value : What happened?
