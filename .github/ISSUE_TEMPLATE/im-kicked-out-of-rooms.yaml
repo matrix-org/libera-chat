@@ -16,7 +16,6 @@ body:
 
           You an also regularly (more often than every 30 days) send `!active` to `@appservice:libera.chat` in DM to manifest yourself as an active user and avoid being kicked by the idle kicker.
         -->
-    
   - type: input
     id: matrixid
     attributes:
