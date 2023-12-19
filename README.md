@@ -1,4 +1,6 @@
-**Please note**: The bridge is temporarily disabled https://matrix.org/blog/2023/08/libera-bridge-disabled/.
+**The Matrix bridge to Libera Chat has been shut down.**
+
+For more information, read [the announcement](https://matrix.org/blog/2023/11/28/shutting-down-bridge-to-libera-chat/) and our follow up post about [cleaning up Libera.Chat aliases](https://matrix.org/blog/2023/12/libera-chat-alias-cleanup/).
 
 This repository is for support requests on the Matrix <-> Libera Chat bridge operated by the matrix.org Foundation.
 
